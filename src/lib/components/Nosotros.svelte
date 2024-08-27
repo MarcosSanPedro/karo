@@ -2,7 +2,7 @@
 	const mision = ['Transparencia', 'Confiabilidad', 'Profesionalismo', 'Presición'];
 </script>
 
-<div class=" px-2  py-5 bg-neutral-content mt-10">
+<div class=" px-2 flex flex-col gap-5 py-5 bg-neutral-content mt-10 md:px-16 lg:px-28 xl:px-60 lg:py-16 ">
 	<h2 class=" text-center text-4xl py-2">¿Quiénes Somos?</h2>
 	<p class=" text-xl text-center py-1 "> 
 		Somos una firma conformada por profesionales de Derechos y Finanzas debidamente acreditados en
@@ -10,7 +10,7 @@
 		notaría, entre otros.
 	</p>
 
-	<div class="mision-list grid grid-cols-2  md:grid-cols-2 p-4 gap-4">
+	<div class="mision-list grid grid-cols-2 w-fit m-auto md:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
 		{#each mision as item}
 			<div class="mision-item flex gap-3 text-xl items-center">
 				<svg class="w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"

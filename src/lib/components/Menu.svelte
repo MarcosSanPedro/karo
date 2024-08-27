@@ -65,7 +65,7 @@
 
 <div class=" hidden h-20 md:flex items-center justify-between px-10">
 	<div class="">
-		<img class="w-60 mt-12" src="logo.svg" alt="logo" />
+		<img class="w-60" src="logo.svg" alt="logo" />
 	</div>
 
 	<ul class="menu md:menu-horizontal rounded-box lg:pr-52 text-lg flex gap-4 lg:gap-12 ">
