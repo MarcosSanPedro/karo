@@ -13,12 +13,15 @@
 	];
 </script>
 
-<div class="relative bg-cover bg-center h-full" style="background-image: url({backgroundImage});">
-	<div class="absolute inset-0 bg-black opacity-20"></div>
-
-	<div class="relative text-amber-900 flex justify-center h-full px-4 py-10">
-		<div class="text-center text-white">
-			<h1 class="text-4xl md:text-6xl font-bold py-6 text- text-slate-300">{title}</h1>
+<div class="relative bg-cover bg-center h-full md:bg-[url('/home-bg.jpg')] md:h-screen">
+	<div class="absolute inset-0 bg-black opacity-50 md:opacity-50"></div>
+	<video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+		<source src="/img8.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+	  </video>
+	<div class="relative  flex justify-center h-full px-4 py-10">
+		<div class="text-center text-blue-200">
+			<h1 class="text-4xl md:text-6xl font-bold py-6 text-300">{title}</h1>
 			<hr />
 			<p class="  md:text-2xl py-6 text-xl">{subtitle}</p>
 			<div class=" flex flex-col text-xl gap-2 py-4">
@@ -36,7 +39,7 @@
 			</div>
 			<a
 				href={buttonLink}
-				class="my-7 text-xl inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
+				class="my-7 text-xl inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition duration-300"
 				>{buttonText}</a
 			>
 		</div>

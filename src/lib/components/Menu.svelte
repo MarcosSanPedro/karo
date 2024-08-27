@@ -1,9 +1,9 @@
-<div class="navbar h-20 sticky top-0 z-10 bg-base-100">
+<div class="navbar h-16 sticky top-0 z-10 bg-base-100 md:hidden">
 	<div class="flex-1">
-		<img class="w-32" src="Multiservices.svg" alt="logo" />
+		<img class="w-52" src="logo.svg" alt="logo" />
 	</div>
 
-	<div class="flex-none">
+	<div class="flex-none pr-3">
 		<button class="btn btn-square btn-ghost w-20 text-xl">
 			Call
 			<svg class=" inline w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
@@ -13,11 +13,10 @@
 			>
 		</button>
 	</div>
-	<div class="flex-none">
+	<div class="flex-none  mr-4">
 		<div class="drawer drawer-end">
 			<input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
 			<div class="drawer-content">
-				<!-- Page content here -->
 				<label for="my-drawer-4" class=""
 					><svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -36,20 +35,62 @@
 			</div>
 			<div class="drawer-side z-10">
 				<label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-				<ul class="menu bg-base-200 text-base-content min-h-full w-4/5 p-4">
-					<!-- Sidebar content here -->
-					<li><a href="/">Inicio</a></li>
-					<li><a href="/">Servicios</a></li>
+				<ul class="menu bg-base-200 text-xl text-base-content min-h-full w-4/5 p-4">
+					<li ><a href="/">Inicio</a></li>
+					<li ><a href="/">Servicios</a></li>
 					<li>
 						<ul>
-							<li><a href="/">Servicios Migratorios</a></li>
-							<li><a href="/">Creacion de empresas</a></li>
-							<li><a href="/">Servicios Migratorios</a></li>
-							
+							<li >
+								<a href="/">- Servicios Migratorios</a>
+							</li>
+							<li >
+								<a href="/">- Creacion de empresas</a>
+							</li>
+							<li ><a href="/">- Notarizaciones</a></li>
+							<li >
+								<a href="/">- Trámites en Nicaragua</a>
+							</li>
+							<li >
+								<a href="/">- Formacion Profesional</a>
+							</li>
+							<li ><a href="/">- Taxes</a></li>
 						</ul>
 					</li>
+					<li ><a href="/">Contactenos</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
+</div>
+
+<div class=" hidden h-20 md:flex items-center justify-between px-10">
+	<div class="">
+		<img class="w-60 mt-12" src="logo.svg" alt="logo" />
+	</div>
+
+	<ul class="menu md:menu-horizontal rounded-box lg:pr-52 text-lg flex gap-4 lg:gap-12 ">
+		<li><a>Inicio</a></li>
+		<li>
+			<details>
+				<summary>Servicios</summary>
+							<ul class="z-10 text-base w-52">
+								<li class=" whitespace-nowrap">
+									<a href="/"> Servicios Migratorios</a>
+								</li>
+								<li>
+									<a href="/"> Creacion de empresas</a>
+								</li>
+								<li><a href="/"> Notarizaciones</a></li>
+								<li>
+									<a href="/"> Trámites en Nicaragua</a>
+								</li>
+								<li>
+									<a href="/"> Formacion Profesional</a>
+								</li>
+								<li><a href="/"> Taxes</a></li>
+							</ul>
+						</details>
+					</li>
+		<li><a href="/test">Contactenos</a></li>
+	</ul>
 </div>

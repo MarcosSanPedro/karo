@@ -2,7 +2,7 @@
 	const services = [
 		{
 			src: '/services/diseno_1.jpg',
-			tittle: 'Servicios Migratorios',
+			tittle: 'Trámites Migratorios',
 			subtittle:
 				'Ofrecemos una amplia gama de servicios migratorios, desde visas de inmigrante y residencia, hasta parol humanitario y asilo. Nuestro equipo experto te guía en cada paso del proceso.'
 		},
@@ -37,13 +37,13 @@
 </script>
 
 <h2 class="text-4xl pl-3 py-3  font-bold mt-10">Nuestros Servicios:</h2>
-<div class=" flex flex-col gap-10" >
+<div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-5 px-3" >
 	{#each services as service}
 		<div class="bg-seg">
-			<img src={service.src} alt="Service Pict" />
+			<img src={service.src} class=" " alt="Service Pict" />
 			<h2 class="px-5 font-semibold text-3xl pt-5 pb-3">{service.tittle}</h2>
 			<p class="text-xl px-5">{service.subtittle}</p>
-            <button class="py-3 px-7 bg-primary ml-5 text-white my-7 text-xl">Ver Mas</button>
+            <button class="py-3 px-7 bg-primary ml-5 rounded-md text-white my-7 text-xl">Ver Mas</button>
 		</div>
 	{/each}
 </div>
