@@ -2,9 +2,11 @@
 	const mision = ['Transparencia', 'Confiabilidad', 'Profesionalismo', 'Presición'];
 </script>
 
-<div class=" px-2 flex flex-col gap-5 py-5 bg-neutral-content mt-10 md:px-16 lg:px-28 xl:px-60 lg:py-16 ">
+<div
+	class=" px-2 flex flex-col gap-5 py-5 bg-neutral-content mt-10 md:px-16 lg:px-28 xl:px-60 lg:py-16"
+>
 	<h2 class=" text-center text-4xl py-2">¿Quiénes Somos?</h2>
-	<p class=" text-xl text-center py-1 "> 
+	<p class=" text-xl text-center py-1">
 		Somos una firma conformada por profesionales de Derechos y Finanzas debidamente acreditados en
 		Nicaragua y Estados Unidos. Ofrecemos Servicios especializados en inmigración, impuestos,
 		notaría, entre otros.

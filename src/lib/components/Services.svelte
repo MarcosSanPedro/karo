@@ -5,7 +5,7 @@
 			link: '/migracion',
 			tittle: 'Trámites Migratorios',
 			subtittle:
-				'Ofrecemos una amplia gama de servicios migratorios, desde visas de inmigrante y residencia, hasta parol humanitario y asilo. Nuestro equipo experto te guía en cada paso del proceso.',
+				'Ofrecemos una amplia gama de servicios migratorios, desde visas de inmigrante y residencia, hasta parol humanitario y asilo. Nuestro equipo experto te guía en cada paso del proceso.'
 		},
 		{
 			src: '/services/diseno_2.jpg',
@@ -25,20 +25,23 @@
 			src: '/services/diseno_4.jpg',
 			link: '/',
 			tittle: 'Notarizaciones',
-			subtittle: 'Proporcionamos servicios de notarización para autenticar y certificar tus documentos importantes de manera rápida y confiable.'
+			subtittle:
+				'Proporcionamos servicios de notarización para autenticar y certificar tus documentos importantes de manera rápida y confiable.'
 		},
 		{
 			src: '/services/diseno_5.jpg',
 			link: '/',
 			tittle: 'Trámites legales en Nicaragua',
-			subtittle: ' Ofrecemos asesoría legal y gestionamos tus trámites legales en Nicaragua, facilitando tus procesos desde Estados Unidos.'
+			subtittle:
+				' Ofrecemos asesoría legal y gestionamos tus trámites legales en Nicaragua, facilitando tus procesos desde Estados Unidos.'
 		},
 		{
 			src: '/services/diseno_6.jpg',
 			link: '/',
 			tittle: 'Formación en hostelería',
-			subtittle: 'Ofrecemos cursos especializados en hostelería, abarcando servicio al cliente, tecnología y sistemas, cocina y gastronomía, para impulsar tu carrera en este sector.'
-		},
+			subtittle:
+				'Ofrecemos cursos especializados en hostelería, abarcando servicio al cliente, tecnología y sistemas, cocina y gastronomía, para impulsar tu carrera en este sector.'
+		}
 	];
 </script>
 
@@ -49,7 +52,11 @@
 			<img src={service.src} class=" " alt="Service Pict" />
 			<h2 class="px-5 font-semibold text-3xl pt-5 pb-3">{service.tittle}</h2>
 			<p class="text-xl px-5">{service.subtittle}</p>
-			<a href={service.link} class="py-3 absolute bottom-0 btn px-7 bg-primary ml-5 rounded-md text-white my-7 text-xl">Ver Mas</a>
+			<a
+				href={service.link}
+				class="py-3 absolute bottom-0 btn px-7 bg-primary ml-5 rounded-md text-white my-7 text-xl"
+				>Ver Mas</a
+			>
 		</div>
 	{/each}
 </div>

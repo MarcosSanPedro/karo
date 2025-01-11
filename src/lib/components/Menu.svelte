@@ -13,7 +13,7 @@
 			>
 		</button>
 	</div>
-	<div class="flex-none  mr-4">
+	<div class="flex-none mr-4">
 		<div class="drawer drawer-end">
 			<input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
 			<div class="drawer-content">
@@ -36,27 +36,27 @@
 			<div class="drawer-side z-10">
 				<label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
 				<ul class="menu bg-base-200 text-xl text-base-content min-h-full w-4/5 p-4">
-					<li ><a href="/">Inicio</a></li>
-					<li ><a href="/">Servicios</a></li>
+					<li><a href="/">Inicio</a></li>
+					<li><a href="/">Servicios</a></li>
 					<li>
 						<ul>
-							<li >
+							<li>
 								<a href="/">- Servicios Migratorios</a>
 							</li>
-							<li >
+							<li>
 								<a href="/">- Creacion de empresas</a>
 							</li>
-							<li ><a href="/">- Notarizaciones</a></li>
-							<li >
+							<li><a href="/">- Notarizaciones</a></li>
+							<li>
 								<a href="/">- Trámites en Nicaragua</a>
 							</li>
-							<li >
+							<li>
 								<a href="/">- Formacion Profesional</a>
 							</li>
-							<li ><a href="/">- Taxes</a></li>
+							<li><a href="/">- Taxes</a></li>
 						</ul>
 					</li>
-					<li ><a href="/">Contactenos</a></li>
+					<li><a href="/">Contactenos</a></li>
 				</ul>
 			</div>
 		</div>
@@ -68,29 +68,29 @@
 		<img class="w-60" src="logo.svg" alt="logo" />
 	</div>
 
-	<ul class="menu md:menu-horizontal rounded-box lg:pr-52 text-lg flex gap-4 lg:gap-12 ">
+	<ul class="menu md:menu-horizontal rounded-box lg:pr-52 text-lg flex gap-4 lg:gap-12">
 		<li><a>Inicio</a></li>
 		<li>
 			<details>
 				<summary>Servicios</summary>
-							<ul class="z-10 text-base w-52">
-								<li class=" whitespace-nowrap">
-									<a href="/"> Servicios Migratorios</a>
-								</li>
-								<li>
-									<a href="/"> Creacion de empresas</a>
-								</li>
-								<li><a href="/"> Notarizaciones</a></li>
-								<li>
-									<a href="/"> Trámites en Nicaragua</a>
-								</li>
-								<li>
-									<a href="/"> Formacion Profesional</a>
-								</li>
-								<li><a href="/"> Taxes</a></li>
-							</ul>
-						</details>
+				<ul class="z-10 text-base w-52">
+					<li class=" whitespace-nowrap">
+						<a href="/"> Servicios Migratorios</a>
 					</li>
+					<li>
+						<a href="/"> Creacion de empresas</a>
+					</li>
+					<li><a href="/"> Notarizaciones</a></li>
+					<li>
+						<a href="/"> Trámites en Nicaragua</a>
+					</li>
+					<li>
+						<a href="/"> Formacion Profesional</a>
+					</li>
+					<li><a href="/"> Taxes</a></li>
+				</ul>
+			</details>
+		</li>
 		<li><a href="/test">Contactenos</a></li>
 	</ul>
 </div>
