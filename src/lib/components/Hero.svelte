@@ -13,7 +13,7 @@
 	];
 </script>
 
-<div class="relative bg-cover bg-center h-full md:h-screen">
+<div id="inicio" class="relative bg-cover bg-center h-full md:h-screen scroll-m-10">
 	<div class="absolute inset-0 bg-black opacity-50 md:opacity-50"></div>
 	<video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
 		<source src="/img8.mp4" type="video/mp4" />

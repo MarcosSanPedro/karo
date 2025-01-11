@@ -1,6 +1,35 @@
+<script lang="ts">
+	type Link = {
+		label: string;
+		href: string;
+		sublinks?: Link[];
+	};
+
+	const defaultLinks: Link[] = [
+		{ label: 'Inicio', href: '/#inicio' },
+		{
+			label: 'Servicios',
+			href: '/#servicios',
+			sublinks: [
+				{ label: 'Servicios Migratorios', href: '/#servicios-migratorios' },
+				{ label: 'Creacion de empresas', href: '/#creacion-de-empresas' },
+				{ label: 'Notarizaciones', href: '/#notarizaciones' },
+				{ label: 'Trámites en Nicaragua', href: '/#tramites-en-nicaragua' },
+				{ label: 'Formacion Profesional', href: '/#formacion-profesional' },
+				{ label: 'Taxes', href: '/#taxes' }
+			]
+		},
+		{ label: 'Contactenos', href: '/test' }
+	];
+
+	let { links = defaultLinks } = $props<{ links?: Link[] }>();
+</script>
+
 <div class="navbar h-16 sticky top-0 z-10 bg-base-100 md:hidden">
 	<div class="flex-1">
-		<img class="w-52" src="logo.svg" alt="logo" />
+		<a href="/#inicio" class="">
+			<img class="w-52" src="logo.svg" alt="logo" />
+		</a>
 	</div>
 
 	<div class="flex-none pr-3">
@@ -36,61 +65,53 @@
 			<div class="drawer-side z-10">
 				<label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
 				<ul class="menu bg-base-200 text-xl text-base-content min-h-full w-4/5 p-4">
-					<li><a href="/">Inicio</a></li>
-					<li><a href="/">Servicios</a></li>
-					<li>
-						<ul>
-							<li>
-								<a href="/">- Servicios Migratorios</a>
-							</li>
-							<li>
-								<a href="/">- Creacion de empresas</a>
-							</li>
-							<li><a href="/">- Notarizaciones</a></li>
-							<li>
-								<a href="/">- Trámites en Nicaragua</a>
-							</li>
-							<li>
-								<a href="/">- Formacion Profesional</a>
-							</li>
-							<li><a href="/">- Taxes</a></li>
-						</ul>
-					</li>
-					<li><a href="/">Contactenos</a></li>
+					{#each links as link}
+						<li>
+							<a href={link.href}>{link.label}</a>
+							{#if link.sublinks}
+								<ul>
+									{#each link.sublinks as sublink}
+										<li><a href={sublink.href} class="text-base">{sublink.label}</a></li>
+									{/each}
+								</ul>
+							{/if}
+						</li>
+					{/each}
 				</ul>
 			</div>
 		</div>
 	</div>
 </div>
+<div class="container mx-auto">
+	<div class=" hidden h-20 md:flex items-center justify-between px-10">
+		<a href="/#inicio" class="">
+			<img class="w-60" src="logo.svg" alt="logo" />
+		</a>
 
-<div class=" hidden h-20 md:flex items-center justify-between px-10">
-	<div class="">
-		<img class="w-60" src="logo.svg" alt="logo" />
+		<ul class="menu md:menu-horizontal rounded-box text-lg flex gap-4 lg:gap-12">
+			<li><a href="/#inicio">Inicio</a></li>
+			<li>
+				<details>
+					<summary>Servicios</summary>
+					<ul class="z-10 text-base w-52">
+						<li class=" whitespace-nowrap">
+							<a href="/"> Servicios Migratorios</a>
+						</li>
+						<li>
+							<a href="/"> Creacion de empresas</a>
+						</li>
+						<li><a href="/"> Notarizaciones</a></li>
+						<li>
+							<a href="/"> Trámites en Nicaragua</a>
+						</li>
+						<li>
+							<a href="/"> Formacion Profesional</a>
+						</li>
+						<li><a href="/"> Taxes</a></li>
+					</ul>
+				</details>
+			</li>
+			<li><a href="/test">Contactenos</a></li>
+		</ul>
 	</div>
-
-	<ul class="menu md:menu-horizontal rounded-box lg:pr-52 text-lg flex gap-4 lg:gap-12">
-		<li><a>Inicio</a></li>
-		<li>
-			<details>
-				<summary>Servicios</summary>
-				<ul class="z-10 text-base w-52">
-					<li class=" whitespace-nowrap">
-						<a href="/"> Servicios Migratorios</a>
-					</li>
-					<li>
-						<a href="/"> Creacion de empresas</a>
-					</li>
-					<li><a href="/"> Notarizaciones</a></li>
-					<li>
-						<a href="/"> Trámites en Nicaragua</a>
-					</li>
-					<li>
-						<a href="/"> Formacion Profesional</a>
-					</li>
-					<li><a href="/"> Taxes</a></li>
-				</ul>
-			</details>
-		</li>
-		<li><a href="/test">Contactenos</a></li>
-	</ul>
 </div>
