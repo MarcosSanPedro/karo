@@ -25,7 +25,7 @@
 	let { links = defaultLinks } = $props<{ links?: Link[] }>();
 </script>
 
-<div class="navbar h-16 sticky top-0 z-10 bg-base-100 md:hidden">
+<div class="navbar h-16 sticky top-0 bg-base-100 md:hidden">
 	<div class="flex-1">
 		<a href="/#inicio" class="">
 			<img class="w-52" src="logo.svg" alt="logo" />

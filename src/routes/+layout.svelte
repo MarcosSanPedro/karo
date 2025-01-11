@@ -7,7 +7,9 @@
 </script>
 
 <div class="flex flex-col min-h-screen">
-	<Menu />
+	<div class="z-50">
+		<Menu />
+	</div>
 	{@render children()}
 	<Footer />
 </div>

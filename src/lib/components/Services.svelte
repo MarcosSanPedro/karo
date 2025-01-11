@@ -12,7 +12,7 @@
 			link: '/',
 			tittle: 'Taxes',
 			subtittle:
-				'Gestionamos declaraciones de impuestos tanto personales como corporativas, asegurando el cumplimiento fiscal y maximizando tus beneficios.'
+				'Gestionamos declaraciones de impuestos tanto personales como corporativas, asecundaryurando el cumplimiento fiscal y maximizando tus beneficios.'
 		},
 		{
 			src: '/services/diseno_3.jpg',
@@ -45,18 +45,28 @@
 	];
 </script>
 
-<h2 class="text-4xl pl-3 py-3 font-bold mt-10">Nuestros Servicios:</h2>
-<div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-5 px-3">
-	{#each services as service}
-		<div class="bg-seg min-h-[630px] relative">
-			<img src={service.src} class=" " alt="Service Pict" />
-			<h2 class="px-5 font-semibold text-3xl pt-5 pb-3">{service.tittle}</h2>
-			<p class="text-xl px-5">{service.subtittle}</p>
-			<a
-				href={service.link}
-				class="py-3 absolute bottom-0 btn px-7 bg-primary ml-5 rounded-md text-white my-7 text-xl"
-				>Ver Mas</a
+<div class="container mx-auto">
+	<h2 class="text-4xl md:text-6xl font-bold my-10 text-center">Nuestros Servicios</h2>
+	<div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-3">
+		{#each services as service}
+			<div
+				class="bg-secundary group relative flex flex-col rounded overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300"
 			>
-		</div>
-	{/each}
+				<div class="flex-grow">
+					<img
+						src={service.src}
+						class="group-hover:scale-[1.03] transition-all duration-300"
+						alt="Service Pict"
+					/>
+					<h2 class="px-5 font-semibold text-3xl pt-5 pb-3">{service.tittle}</h2>
+					<p class="text-xl px-5">{service.subtittle}</p>
+				</div>
+				<a
+					href={service.link}
+					class="py-3 bottom-0 btn px-7 bg-primary ml-5 rounded-md text-white hover:bg-primary/80 my-7 text-xl w-fit"
+					>Ver Mas</a
+				>
+			</div>
+		{/each}
+	</div>
 </div>

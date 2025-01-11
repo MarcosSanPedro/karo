@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				seg: 'rgb(239, 247, 255)'
+				secundary: 'rgb(239, 247, 255)'
 			}
 		}
 	},
