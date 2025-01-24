@@ -83,7 +83,7 @@
 									
 									{#each link.sublinks as sublink}
 									
-										<li><a href={sublink.href} on:click={closeDrawer} class="text-base ">{sublink.label}</a></li>
+										<li><a href={sublink.href} onclick={closeDrawer} class="text-base ">{sublink.label}</a></li>
 									{/each}
 								</ul>
 							{/if}

@@ -13,7 +13,7 @@
 		subtitle:
 			'Te guiamos en cada paso de tu camino, desde la reunificación familiar hasta el establecimiento de tu propio negocio en los Estados Unidos.',
 		buttonText: 'Consulta Gratis',
-		buttonLink: '/servicios',
+		buttonLink: 'tel:+17869191911',
 		services: [
 			'Declaración de impuestos (Taxes)',
 			'Trámites Notariales',
@@ -33,9 +33,9 @@
 	</video>
 	<div class="relative flex justify-center h-full px-4 py-10 lg:px-40 z-20">
 		<div class="text-center text-blue-200 font-semibold">
-			<h1 class="text-4xl md:text-6xl font-bold py-6">{content.title}</h1>
+			<h1 class="text-4xl md:text-6xl font-bold py-6 text-white">{content.title}</h1>
 			<hr />
-			<p class="md:text-2xl py-6 text-xl font-normal">{content.subtitle}</p>
+			<p class="md:text-2xl text-white py-6 text-xl font-normal">{content.subtitle}</p>
 			<div class=" flex flex-col w-fit m-auto text-gray-200 text-left text-xl gap-2 py-4">
 				{#each content.services as service}
 					<div class="  flex gap-3">
