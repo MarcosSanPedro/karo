@@ -5,6 +5,12 @@
 		sublinks?: Link[];
 	};
 
+	function closeDrawer(event: Event) {
+    const drawerCheckbox = document.getElementById('my-drawer-4') as HTMLInputElement;
+    if (drawerCheckbox) {
+      drawerCheckbox.checked = false; // Desmarcar el checkbox para cerrar el drawer
+    }
+  }
 	const defaultLinks: Link[] = [
 		{ label: 'Inicio', href: '/#inicio' },
 		{
@@ -16,7 +22,7 @@
 				{ label: 'Notarizaciones', href: '/#notarizaciones' },
 				{ label: 'Trámites en Nicaragua', href: '/#tramites-en-nicaragua' },
 				{ label: 'Formacion Profesional', href: '/#formacion-profesional' },
-				{ label: 'Taxes', href: '/#taxes' }
+				{ label: 'Taxes', href: '/taxes' }
 			]
 		},
 		{ label: 'Contactenos', href: '/test' }
@@ -33,14 +39,14 @@
 	</div>
 
 	<div class="flex-none pr-3">
-		<button class="btn btn-square btn-ghost w-20 text-xl">
+		<a href="tel:+17869191911" class="btn btn-square btn-ghost w-20 text-xl">
 			Call
 			<svg class=" inline w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
 				><path
 					d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"
 				/></svg
 			>
-		</button>
+		</a>
 	</div>
 	<div class="flex-none mr-4">
 		<div class="drawer drawer-end">
@@ -63,15 +69,21 @@
 				>
 			</div>
 			<div class="drawer-side z-10">
-				<label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+				<label for="my-drawer-4" aria-label="close-sidebar" class="drawer-overlay"></label>
 				<ul class="menu bg-base-200 text-xl text-base-content min-h-full w-4/5 p-4">
 					{#each links as link}
 						<li>
-							<a href={link.href}>{link.label}</a>
+							<a  href={link.href}>{link.label}</a>
 							{#if link.sublinks}
+							
 								<ul>
+									<input id="my-drawer-5" type="checkbox" class="drawer-toggle" />
+									
+
+									
 									{#each link.sublinks as sublink}
-										<li><a href={sublink.href} class="text-base">{sublink.label}</a></li>
+									
+										<li><a href={sublink.href} on:click={closeDrawer} class="text-base ">{sublink.label}</a></li>
 									{/each}
 								</ul>
 							{/if}
@@ -95,19 +107,19 @@
 					<summary>Servicios</summary>
 					<ul class="z-10 text-base w-52">
 						<li class=" whitespace-nowrap">
-							<a href="/"> Servicios Migratorios</a>
+							<a href="/migracion"> Servicios Migratorios</a>
 						</li>
 						<li>
-							<a href="/"> Creacion de empresas</a>
+							<a href="/taxes"> Creacion de empresas</a>
 						</li>
-						<li><a href="/"> Notarizaciones</a></li>
+						<li><a href="/notarizaciones"> Notarizaciones</a></li>
 						<li>
-							<a href="/"> Trámites en Nicaragua</a>
+							<a href="/tramites-en-nicaragua"> Trámites en Nicaragua</a>
 						</li>
 						<li>
-							<a href="/"> Formacion Profesional</a>
+							<a href="/formacion-profesional"> Formacion Profesional</a>
 						</li>
-						<li><a href="/"> Taxes</a></li>
+						<li><a href="/taxes"> Taxes</a></li>
 					</ul>
 				</details>
 			</li>
