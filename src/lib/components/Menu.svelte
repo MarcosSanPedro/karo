@@ -105,21 +105,21 @@
 			<li>
 				<details>
 					<summary>Servicios</summary>
-					<ul class="z-10 text-base w-52">
-						<li class=" whitespace-nowrap">
-							<a href="/migracion"> Servicios Migratorios</a>
+					<ul class="z-10  text-base">
+						<li>
+							<a href="/migracion" class="whitespace-nowrap"> Servicios Migratorios</a>
 						</li>
 						<li>
-							<a href="/taxes"> Creacion de empresas</a>
+							<a href="/taxes" class="whitespace-nowrap"> Creacion de empresas</a>
 						</li>
-						<li><a href="/notarizaciones"> Notarizaciones</a></li>
+						<li><a href="/notarizaciones" class="whitespace-nowrap"> Notarizaciones</a></li>
 						<li>
-							<a href="/tramites-en-nicaragua"> Trámites en Nicaragua</a>
+							<a href="/tramites-en-nicaragua" class="whitespace-nowrap"> Trámites en Nicaragua</a>
 						</li>
 						<li>
-							<a href="/formacion-profesional"> Formacion Profesional</a>
+							<a href="/formacion-profesional" class="whitespace-nowrap"> Formacion Profesional</a>
 						</li>
-						<li><a href="/taxes"> Taxes</a></li>
+						<li><a href="/taxes" class="whitespace-nowrap"> Taxes</a></li>
 					</ul>
 				</details>
 			</li>
